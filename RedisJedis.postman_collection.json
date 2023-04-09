@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "a085dc0e-8f97-47ea-8ae3-afd05fb9a3b1",
+		"name": "RedisJedis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25459509"
+	},
+	"item": [
+		{
+			"name": "Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"José\",\r\n    \"lastName\" : \"Silva\",\r\n    \"age\" : 30,\r\n    \"enrollment\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/employee/enrollment/123456",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"enrollment",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"José\",\r\n    \"lastName\" : \"Silva\",\r\n    \"age\" : 25,\r\n    \"enrollment\" : \"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/employee/enrollment/1234567",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"enrollment",
+						"1234567"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
